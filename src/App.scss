@@ -1,0 +1,39 @@
+@use './scss/color.scss';
+@import "node_modules/bootstrap/scss/bootstrap";
+
+.App {
+ 
+}
+.border-gray{
+    border: 1px solid var(--bs-gray-custom);
+}
+.pencil{
+    color: var(--bs-yellow-custom);
+}
+.remove, .anchortodo:hover{
+    color: var(--bs-red-custom);
+}
+.error, .delete{
+    background: var(--bs-red-custom);
+}
+.delete{
+    border: none;
+}
+.anchortodo{
+    color: #000;
+    text-decoration: none;
+}
+.bglightgreen{
+    background: var(--bs-light-green);
+}
+.pedd{
+    padding: 7px 20px;
+}
+.footer{
+    background: #333;
+}
+.bottomtouched{
+right: 0;
+bottom: 0;
+left: 0;
+}

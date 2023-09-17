@@ -1,0 +1,14 @@
+@use '../scss/color.scss'; 
+
+.bgblue{
+  background: #3166b9;
+  color: #fff;
+}
+.nav a, .navlogo a{ 
+    text-decoration: none;
+    font-size: 20px; 
+}
+  
+.bgblue .nav a:hover, .bgblue .nav a.active{
+  color: var(--bs-red-custom) !important;
+}

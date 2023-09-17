@@ -51,14 +51,16 @@ export default function TodoDetailsPage() {
 export const loader = async({request, params})=>{
  //console.log(params);
  const todoID = params?.todoId;
-
+ try{
  const response = await fetch('http://localhost:8080/todolist/'+todoID);
-
  if(!response.ok){
      throw new Response(JSON.stringify({message:'Todo record not found...'}),{status: 500});
  }else{
  return response;
  }
+}catch(err){
+ return err;
+}
 
 }
 

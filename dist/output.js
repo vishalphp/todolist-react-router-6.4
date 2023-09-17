@@ -8713,7 +8713,7 @@ try {
 /******/ 	
 /******/ 	/* webpack/runtime/getFullHash */
 /******/ 	!function() {
-/******/ 		__webpack_require__.h = function() { return "d69ba74dc5ee3e12bc18"; }
+/******/ 		__webpack_require__.h = function() { return "33b554f54a4663728b95"; }
 /******/ 	}();
 /******/ 	
 /******/ 	/* webpack/runtime/global */
@@ -16162,11 +16162,14 @@ function TodoListPage() {
   var month = curentdate.getMonth() + 1;
   var year = curentdate.getFullYear();
   var combDate = year + '-' + numbFormate(month) + '-' + numbFormate(date); //yyyy-mm-dd
-  //console.log(data.todolists);
-  var _useState = (0,react.useState)(data.todolists),
+
+  var todolistOrignal = data.todolists ? data.todolists : data;
+  // added dummy todo because netlify giving lising error on backend not avaliable.
+  var _useState = (0,react.useState)(todolistOrignal),
     _useState2 = _slicedToArray(_useState, 2),
     allTodoListData = _useState2[0],
     setAllTodoListData = _useState2[1];
+
   //filter
   var _useState3 = (0,react.useState)(true),
     _useState4 = _slicedToArray(_useState3, 2),
@@ -16276,30 +16279,56 @@ function TodoListPage() {
 }
 var loader = function loader() {
   return (_ref = _ref || _asyncToGenerator( /*#__PURE__*/regenerator_default().mark(function _callee() {
-    var response;
+    var response, datas;
     return regenerator_default().wrap(function _callee$(_context) {
       while (1) switch (_context.prev = _context.next) {
         case 0:
-          _context.next = 2;
+          _context.prev = 0;
+          _context.next = 3;
           return fetch('http://localhost:8080/todolist');
-        case 2:
+        case 3:
           response = _context.sent;
           if (response.ok) {
             _context.next = 7;
             break;
           }
-          throw new Response(JSON.stringify({
-            message: 'API Not working...'
-          }), {
-            status: 500
-          });
+          _context.next = 8;
+          break;
         case 7:
           return _context.abrupt("return", response);
         case 8:
+          _context.next = 14;
+          break;
+        case 10:
+          _context.prev = 10;
+          _context.t0 = _context["catch"](0);
+          datas = [{
+            "title": "What is Lorem Ipsum?",
+            "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+            "date": "2023-09-14",
+            "id": "5a463b93-456d-4ce5-ad65-a31f92c0fb35"
+          }, {
+            "title": "Why do we use it?",
+            "description": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters.",
+            "date": "2023-09-12",
+            "id": "aee6c4e5-9c61-43df-92d4-b60b67ca1fbb"
+          }, {
+            "title": "Where does it come from?",
+            "description": "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.",
+            "date": "2023-10-09",
+            "id": "1"
+          }, {
+            "title": "Where can I get some?",
+            "description": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.",
+            "date": "2023-10-10",
+            "id": "2"
+          }];
+          return _context.abrupt("return", _context.t0.message === 'Failed to fetch' ? datas : '');
+        case 14:
         case "end":
           return _context.stop();
       }
-    }, _callee);
+    }, _callee, null, [[0, 10]]);
   }))).apply(this, arguments);
 };
 var action = function action(_x) {
@@ -20741,12 +20770,13 @@ var TodoDetailsPage_loader = function loader(_x) {
           request = _ref.request, params = _ref.params;
           //console.log(params);
           todoID = params === null || params === void 0 ? void 0 : params.todoId;
-          _context.next = 4;
+          _context.prev = 2;
+          _context.next = 5;
           return fetch('http://localhost:8080/todolist/' + todoID);
-        case 4:
+        case 5:
           response = _context.sent;
           if (response.ok) {
-            _context.next = 9;
+            _context.next = 10;
             break;
           }
           throw new Response(JSON.stringify({
@@ -20754,13 +20784,20 @@ var TodoDetailsPage_loader = function loader(_x) {
           }), {
             status: 500
           });
-        case 9:
-          return _context.abrupt("return", response);
         case 10:
+          return _context.abrupt("return", response);
+        case 11:
+          _context.next = 16;
+          break;
+        case 13:
+          _context.prev = 13;
+          _context.t0 = _context["catch"](2);
+          return _context.abrupt("return", _context.t0);
+        case 16:
         case "end":
           return _context.stop();
       }
-    }, _callee);
+    }, _callee, null, [[2, 13]]);
   }))).apply(this, arguments);
 };
 var TodoDetailsPage_action = function action(_x2) {

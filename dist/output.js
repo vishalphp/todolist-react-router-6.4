@@ -8713,7 +8713,7 @@ try {
 /******/ 	
 /******/ 	/* webpack/runtime/getFullHash */
 /******/ 	!function() {
-/******/ 		__webpack_require__.h = function() { return "d51609592b7ffbd65fa9"; }
+/******/ 		__webpack_require__.h = function() { return "d69ba74dc5ee3e12bc18"; }
 /******/ 	}();
 /******/ 	
 /******/ 	/* webpack/runtime/global */
@@ -15674,7 +15674,7 @@ var Home = function Home() {
   var RedirectToddolist = function RedirectToddolist() {
     navigate("/todolist");
   };
-  return /*#__PURE__*/react.createElement(react.Fragment, null, /*#__PURE__*/react.createElement("h1", null, "Home"), /*#__PURE__*/react.createElement("p", null, "Test Style home"), /*#__PURE__*/react.createElement(esm_Figure, null, /*#__PURE__*/react.createElement(esm_Figure.Image, {
+  return /*#__PURE__*/react.createElement(react.Fragment, null, /*#__PURE__*/react.createElement("h1", null, "Home"), /*#__PURE__*/react.createElement(esm_Figure, null, /*#__PURE__*/react.createElement(esm_Figure.Image, {
     alt: "to do list",
     src: To_Do_List
   })), /*#__PURE__*/react.createElement(Link, {
@@ -16220,7 +16220,7 @@ function TodoListPage() {
 
   return /*#__PURE__*/react.createElement(react.Fragment, null, /*#__PURE__*/react.createElement("h1", {
     className: "text-center text-capitalize fw-normal fs-2 mb-2"
-  }, "Todo List"), /*#__PURE__*/react.createElement("p", null, "test style todolist"), /*#__PURE__*/react.createElement(esm_Container, {
+  }, "Todo List"), /*#__PURE__*/react.createElement(esm_Container, {
     fluid: true
   }, /*#__PURE__*/react.createElement(esm_Row, {
     className: "row justify-content-around"

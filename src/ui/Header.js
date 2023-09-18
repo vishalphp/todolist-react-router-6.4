@@ -27,6 +27,9 @@ export default function Header() {
                     <NavLink className={({ isActive }) => (isActive ? 'active text-white px-2' : 'inactive text-white px-2')} to='addtodolist'>Add List</NavLink>
                     <div className="vr text-white" />
                     <NavLink className={({ isActive }) => (isActive ? 'active text-white px-2' : 'inactive text-white px-2')} to='addtodolistviafetcher'>Add List Via Fetcher</NavLink>
+                    <div className="vr text-white" />
+                    <NavLink className={({ isActive }) => (isActive ? 'active text-white px-2' : 'inactive text-white px-2')} to='document'>Document</NavLink>
+                   
                     
                 </Nav> 
         </Stack>

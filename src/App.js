@@ -12,6 +12,7 @@ import TodoListRootLayout from './layout/TodoListRootLayout';
 import EditTodo  from './pages/EditTodo';
 import { action as addtodoListAction} from './component/FormTodo';
 import AddListViaFam, { action as addtodoListViaFamAction}  from './pages/AddListViaFam';
+import Document from "./pages/Document";
 
 function App() {
 
@@ -26,6 +27,10 @@ const createRouteObjects = createBrowserRouter([
                   index: true,
                   element: <Home />,
                   },
+                  {
+                    path: 'document',
+                    element: <Document />,
+                    },
                   {
                    path: 'todolist',
                    element: <TodoListRootLayout />,

@@ -8713,7 +8713,7 @@ try {
 /******/ 	
 /******/ 	/* webpack/runtime/getFullHash */
 /******/ 	!function() {
-/******/ 		__webpack_require__.h = function() { return "33b554f54a4663728b95"; }
+/******/ 		__webpack_require__.h = function() { return "9509305a51c8d80f0947"; }
 /******/ 	}();
 /******/ 	
 /******/ 	/* webpack/runtime/global */
@@ -20694,7 +20694,15 @@ function Header() {
       return isActive ? 'active text-white px-2' : 'inactive text-white px-2';
     },
     to: "addtodolistviafetcher"
-  }, "Add List Via Fetcher")))));
+  }, "Add List Via Fetcher"), /*#__PURE__*/react.createElement("div", {
+    className: "vr text-white"
+  }), /*#__PURE__*/react.createElement(NavLink, {
+    className: function className(_ref6) {
+      var isActive = _ref6.isActive;
+      return isActive ? 'active text-white px-2' : 'inactive text-white px-2';
+    },
+    to: "document"
+  }, "Document")))));
 }
 ;// CONCATENATED MODULE: ./src/ui/Footer.js
 
@@ -20988,7 +20996,16 @@ var AddListViaFam_action = function action(_x) {
     }, _callee);
   }))).apply(this, arguments);
 };
+;// CONCATENATED MODULE: ./src/pages/Document.js
+
+
+
+
+function Document() {
+  return /*#__PURE__*/react.createElement(react.Fragment, null, /*#__PURE__*/react.createElement(esm_Container, null, /*#__PURE__*/react.createElement(esm_Row, null, /*#__PURE__*/react.createElement(esm_Col, null, /*#__PURE__*/react.createElement("h2", null, "Title: "))), /*#__PURE__*/react.createElement(esm_Row, null, /*#__PURE__*/react.createElement(esm_Col, null, /*#__PURE__*/react.createElement("p", null, "React Router 6.4 Based Todo List"))), /*#__PURE__*/react.createElement(esm_Row, null, /*#__PURE__*/react.createElement(esm_Col, null, /*#__PURE__*/react.createElement("h2", null, "Project Goals and Objectives:"))), /*#__PURE__*/react.createElement(esm_Row, null, /*#__PURE__*/react.createElement(esm_Col, null, /*#__PURE__*/react.createElement("p", null, "The project is designed and developed by React router 6.4 which is the latest routing approach of React router. The project covers the all necessary hooks to create a web app with the listing, editing, deleting, viewing, and same-page submit form features."), /*#__PURE__*/react.createElement("p", null, "The main goal of the project is to learn new things that may not covered while working in a product-based company. The project will enhance the knowledge in react."))), /*#__PURE__*/react.createElement(esm_Row, null, /*#__PURE__*/react.createElement(esm_Col, null, /*#__PURE__*/react.createElement("h2", null, "Project Scope:"))), /*#__PURE__*/react.createElement(esm_Row, null, /*#__PURE__*/react.createElement(esm_Col, null, /*#__PURE__*/react.createElement("ol", null, /*#__PURE__*/react.createElement("li", null, " The Common section covers the navigation, logo, and footer, which is the root layout for all pages."), /*#__PURE__*/react.createElement("li", null, "The UI/UX was designed with the help of sass and bootstrap5."), /*#__PURE__*/react.createElement("li", null, "Home page cover image & url changed using webpack 5 on build run and link to connect with listing via button click."), /*#__PURE__*/react.createElement("li", null, "The List page has a list of todo that cover fetch, userouteerror, useloaderdata, action loader, etc. hooks. The list will come through custom node backend todolist.json file."), /*#__PURE__*/react.createElement("li", null, "List Detail page to show respective listing data based on list id and cover, params, useroutedata, edit button with relative & absolute path, delete, fetch API to get data, action loader."), /*#__PURE__*/react.createElement("li", null, "Add a list page covering the userouteloaderdata with respective ID to get data at edit mode and add mode will work accordingly. Here we use dynamic post, and patch methods for form."), /*#__PURE__*/react.createElement("li", null, "Add list by useFetcher and useSubmit hook method where when we submit the data page will not reload on submit the data.")))), /*#__PURE__*/react.createElement(esm_Row, null, /*#__PURE__*/react.createElement(esm_Col, null, /*#__PURE__*/react.createElement("h2", null, "WebPack Used: "))), /*#__PURE__*/react.createElement(esm_Row, null, /*#__PURE__*/react.createElement(esm_Col, null, /*#__PURE__*/react.createElement("ol", null, /*#__PURE__*/react.createElement("li", null, "Entry point"), /*#__PURE__*/react.createElement("li", null, "Output"), /*#__PURE__*/react.createElement("li", null, "HtmlWebpackPlugin"), /*#__PURE__*/react.createElement("li", null, "MiniCssExtractPlugin"), /*#__PURE__*/react.createElement("li", null, "CssMinimizerWebpackPlugin"), /*#__PURE__*/react.createElement("li", null, "CopyWebpackPlugin"), /*#__PURE__*/react.createElement("li", null, "babelrc"), /*#__PURE__*/react.createElement("li", null, "css-loader"), /*#__PURE__*/react.createElement("li", null, "file-loader"), /*#__PURE__*/react.createElement("li", null, "sass-loader"), /*#__PURE__*/react.createElement("li", null, "style-loader")))), /*#__PURE__*/react.createElement(esm_Row, null, /*#__PURE__*/react.createElement(esm_Col, null, /*#__PURE__*/react.createElement("h2", null, "How to run code on locally:"))), /*#__PURE__*/react.createElement(esm_Row, null, /*#__PURE__*/react.createElement(esm_Col, null, /*#__PURE__*/react.createElement("h4", null, "Frontend-"))), /*#__PURE__*/react.createElement(esm_Row, null, /*#__PURE__*/react.createElement(esm_Col, null, /*#__PURE__*/react.createElement("ol", null, /*#__PURE__*/react.createElement("li", null, "Need to make a clone of the branch from https://github.com/vishalphp/todolist-react-router-6.4.git"), /*#__PURE__*/react.createElement("li", null, "Fire the command npm i locally to install all dependencies."), /*#__PURE__*/react.createElement("li", null, "Fire the command npm run start to start the server."), /*#__PURE__*/react.createElement("li", null, "Fire the URL (http://localhost:8081/) on the browser.")))), /*#__PURE__*/react.createElement(esm_Row, null, /*#__PURE__*/react.createElement(esm_Col, null, /*#__PURE__*/react.createElement("h4", null, "Backend-"))), /*#__PURE__*/react.createElement(esm_Row, null, /*#__PURE__*/react.createElement(esm_Col, null, /*#__PURE__*/react.createElement("ol", null, /*#__PURE__*/react.createElement("li", null, "Need to make a clone of the branch from  https://github.com/vishalphp/todo-list-backend.git"), /*#__PURE__*/react.createElement("li", null, "Fire the command npm i locally to install all dependencies."), /*#__PURE__*/react.createElement("li", null, "Fire the command npm run start to start the server."), /*#__PURE__*/react.createElement("li", null, "Fire the URL (http://localhost:8080/todolist) on the browser to check server's response")))), /*#__PURE__*/react.createElement(esm_Row, null, /*#__PURE__*/react.createElement(esm_Col, null, /*#__PURE__*/react.createElement("p", null, "** Note: Need to run backend on local to get response on frontend otherwise dummy list will come and detai page may give error.")))));
+}
 ;// CONCATENATED MODULE: ./src/App.js
+
 
 
 
@@ -21011,6 +21028,9 @@ function App() {
     children: [{
       index: true,
       element: /*#__PURE__*/react.createElement(pages_Home, null)
+    }, {
+      path: 'document',
+      element: /*#__PURE__*/react.createElement(Document, null)
     }, {
       path: 'todolist',
       element: /*#__PURE__*/react.createElement(TodoListRootLayout, null),
